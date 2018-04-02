@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EntityScan("com.delivery.domain")
+@EntityScan("com.example.Projekt0301")
 public class Projekt0301Application {
 
 	public static void main(String[] args) {

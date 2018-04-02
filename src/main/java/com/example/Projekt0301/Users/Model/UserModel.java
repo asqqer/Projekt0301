@@ -8,9 +8,10 @@ public class UserModel {
         @GeneratedValue(strategy= GenerationType.IDENTITY)
         @Column(name = "id", unique = true, nullable = false)
         private Integer id;
-
+        @Column(name = "username")
         private String username;
 
+        @Column(name = "password")
         private String password;
 
     public UserModel(String username, String password) {

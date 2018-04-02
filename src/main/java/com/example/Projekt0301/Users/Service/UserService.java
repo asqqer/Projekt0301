@@ -14,8 +14,11 @@ public class UserService {
     @Autowired
     private UserRepository repo;
 
-    //@Transactional
     public List<UserModel> list(){
         return (List<UserModel>) repo.findAll();
+    }
+    public void listadd(){
+        repo.save(new UserModel("Asger","block"));
+
     }
 }
